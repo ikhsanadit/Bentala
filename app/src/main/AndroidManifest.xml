@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bangkit2022.bentala">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_appl"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_appl"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bentala">
+        <activity
+            android:name=".onboard.ThirdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".onboard.SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".onboard.OneActivity"
+            android:exported="false" />
+        <activity android:name=".StartActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".PictureProcessActivity" />
+    </application>
+
+</manifest>
